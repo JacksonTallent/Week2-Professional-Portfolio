@@ -1,0 +1,135 @@
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    --slightlydark: #ece1be;
+}
+body {
+    background-color: #fff2cc;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a {
+    color: #49b85a;
+}
+
+/*header/nav links*/
+header {
+    background-color: var(--slightlydark);
+    font-size: 2rem;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+header h1 {
+ display: inline-block;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+/*Banner*/
+.banner {
+    width: 100%;
+    height: 300px;
+    border-bottom: 3px solid;
+    border-color: var(--slightlydark);
+}
+/*About me*/
+h2 {
+    font-size:3rem;
+    margin-left: 1rem;
+}
+p{
+    margin-left: 2rem;
+}
+.abtme {
+    width: 100%;
+    display: flex;
+}
+.abtme img {
+    max-width: 30%;
+    height: auto;
+    margin-left: 1em;
+    border: 3px solid var(--slightlydark);
+}
+
+/*My work*/
+.work {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 30vh;
+}
+.work p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.work a {
+    border: 3px solid var(--slightlydark);
+}
+.work a:hover {
+    border-color: #49b85a;
+}
+.fproj {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("/assets/images/refactored.png");
+    background-size: cover;
+}
+.p2 {
+    background-image: url("/assets/images/portfolio.png");
+    background-size: cover;
+
+}
+.p3 {
+    background-image: url("/assets/images/midjourney.jpg");
+    background-size: cover;
+}
+/*Placeholder class*/
+.ph {
+    background-image: url("/assets/images/placeholder.png");
+}
+
+/*Contact Me*/
+.contact li {
+    font-size: 1.5em;
+    display:inline-block;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1150px) {
+    header {
+      display: block;
+      position: static;
+      background-color: pink;
+    }
+    header nav {
+        float: none;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .abtme {
+        display: block;
+    }
+  }

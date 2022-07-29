@@ -89,21 +89,21 @@ p{
 .fproj {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url("/assets/images/refactored.png");
+    background-image: url("./assets/images/refactored.png");
     background-size: cover;
 }
 .p2 {
-    background-image: url("/assets/images/portfolio.png");
+    background-image: url("./assets/images/portfolio.png");
     background-size: cover;
 
 }
 .p3 {
-    background-image: url("/assets/images/midjourney.jpg");
+    background-image: url("./assets/images/midjourney.jpg");
     background-size: cover;
 }
 /*Placeholder class*/
 .ph {
-    background-image: url("/assets/images/placeholder.png");
+    background-image: url("./assets/images/placeholder.png");
 }
 
 /*Contact Me*/
